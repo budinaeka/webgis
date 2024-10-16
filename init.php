@@ -10,8 +10,8 @@
             PDO::ATTR_EMULATE_PREPARES   => false
         ];
 
-        $dsn = "pgsql:host=bep-webgis24-budinaeka-4c0a.l.aivencloud.com;dbname=defaultdb;port=25601";
-        $pdo = new PDO($dsn, 'avnadmin', 'AVNS_ttc_mQLi70bgnnc1W59', $opt);
+        $dsn = "pgsql: a.l.aivencloud.com;dbname=defaultdb;port=25601";
+        $pdo = new PDO($dsn, 'avnadmin', 'av', $opt);
 
     } catch(PDOException $e) {
         echo "Error: ".$e->getMessage();
